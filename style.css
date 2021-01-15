@@ -1,0 +1,112 @@
+.container {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.board {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-areas:
+    'c1 c2 c3'
+    'c4 c5 c6'
+    'c7 c8 c9';
+}
+
+.info {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.reset {
+  padding: 5px;
+  font-size: 1.1em;
+  border-radius: 15%;
+  outline: none;
+}
+
+.next-round {
+  padding: 5px;
+  font-size: 1.1em;
+  border-radius: 15%;
+  outline: none;
+  margin-left: 10px;
+}
+
+.cell {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+.cell:hover {
+  background-color: gray;
+}
+
+.c1 {
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.c2 {
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.c3 {
+  border-bottom: 5px solid black;
+}
+
+.c4 {
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.c5 {
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.c6 {
+  border-bottom: 5px solid black;
+}
+
+.c7 {
+  border-right: 5px solid black;
+}
+
+.c8 {
+  border-right: 5px solid black;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.popup-heading {
+  text-align: center;
+}
+
+.second-input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
